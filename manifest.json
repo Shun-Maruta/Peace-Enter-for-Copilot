@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Peace Enter Key for Copilot",
+	"version": "1.0",
+	"description": "Enterキーで送信ではなく、Enterキーで改行し、Ctrl+Enterで送信するように変更する拡張機能です。",
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://copilot.microsoft.com/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
